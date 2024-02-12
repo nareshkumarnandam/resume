@@ -55,10 +55,10 @@ body{
     color: white;
     cursor: pointer;
     border-radius: 5px;
-    transition: all 0.5s;
+    transition: all 0.2s;
     font-weight: 700;
 }
-.downloadBtn:hover{
+.downloadBtn:active{
     transform: scale(0.98);
 }
 .downloadIcon{
@@ -229,9 +229,6 @@ textarea{
 #addEducation:hover{
     transform: scale(1.01);
 }
-#twoColumnTemplate {
-    /* display: none; */
-}
 #header{
     width: 100%;
     height: 150px;
@@ -253,7 +250,7 @@ textarea{
     flex-direction: column;
     background-color: #d4d4d4;
     border: none;
-    height: 100vw;
+    /* height: 100vw; */
     padding: 10px;
     gap: 20px;
     /* position: relative; */
@@ -409,22 +406,22 @@ input{
     margin: 0;
 } */
 
-#experience{
+#experience, #experience2, #projectContainer, #educationCont{
     width: 100%;
     padding: 0 20px;
     margin-bottom: 10px;
 }
-#employementInfo{
+#employementInfo, #MiniemployementInfo, #projectInfo, #MiniprojectInfo, #educationInfo, #MinieducationInfo{
     display: flex;
     flex-direction: column;
     font-size: 14px;
 }
-#topInfo{
+#topInfo, #MinitopInfo{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-#bottomInfo{
+#bottomInfo,#MinibottomInfo{
     display: flex;
     width: 100%;
     padding-left: 10px;
@@ -453,4 +450,7 @@ input{
     border-radius: 3px;
     font-size: 14px;
     font-weight: bold;
+}
+#JobdescriptionInput, #projectDescriptionInput, #educationDescription{
+    width: 100%;
 }
